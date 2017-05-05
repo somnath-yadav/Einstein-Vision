@@ -1,0 +1,32 @@
+<apex:page Controller="VisionController">
+  <apex:form >
+  <apex:pageBlock >
+      
+      <!--
+	  <apex:image url="https://playful-goat-83078-dev-ed.my.salesforce.com/0696F000003fiQx" height="250" width="250">
+      </apex:image>
+      <br/>
+      <apex:repeat value="{!AccessToken}" var="accessToken">
+          Access Token:<apex:outputText value="{!accessToken}" /><br/>
+      </apex:repeat>
+      -->
+      <apex:pageBlockButtons >
+      	<apex:commandButton value="Upload Product Image"  onclick="window.open('/_ui/core/chatter/files/FileTabPage')" />
+           </apex:pageBlockButtons>
+      <apex:pageBlockSection >
+      	<apex:inputText value="{!imageTitle}" label="Enter Image Title"/>
+      </apex:pageBlockSection>
+      <br/><br/>
+	  <apex:pageBlockSection >
+          <apex:repeat value="{!CallVisionContent}" var="prediction">
+              <apex:outputText label="Product Identified" value="{!prediction.label}" />:<apex:outputText label="Probability" value="{!prediction.probability}" /><br/><br/><br/>
+          </apex:repeat>
+      </apex:pageBlockSection>
+  </apex:pageBlock>
+<!--  <apex:pageBlock > -->
+<!--      <apex:repeat value="{!callVisionContent}" var="prediction"> -->
+<!--          <apex:outputText value="{!prediction.label}" />:<apex:outputText value="{!prediction.probability}" /><br/> -->
+<!--    </apex:repeat> -->
+<!--  </apex:pageBlock> -->
+  </apex:form>
+</apex:page>
