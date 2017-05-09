@@ -16,7 +16,7 @@
 
 curl -X POST -H "Authorization: Bearer b142bd7e300749f98789a4a933bd70551be17608" -H "Cache-Control: no-cache" -H "Content-Type: multipart/form-data" -F "data=@/home/som2004/AllerganProducts.zip"  https://api.metamind.io/v1/vision/datasets/upload/sync
 
-- Response
+-- Response
 
 {"id":1002739,"name":"AllerganProducts","createdAt":"2017-05-09T10:20:45.000+0000","updatedAt":"2017-05-09T10:20:45.000+0000","labelSummary":{"labels":[{"id":17275,"datasetId":1002739,"name":"Refresh","numExamples":28},{"id":17276,"datasetId":1002739,"name":"Botox","numExamples":33}]},"totalExamples":61,"totalLabels":2,"available":true,"statusMsg":"SUCCEEDED","type":"image","object":"dataset"}
 
