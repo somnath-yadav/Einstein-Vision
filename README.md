@@ -30,4 +30,5 @@ curl -X POST -H "Authorization: Bearer 74e836aa7d994a0a2207ac320f8947790d1be9a8"
 
 
 - Predict
+
 curl -X POST -H "Authorization: Bearer 6710ebc7d1c65e017049d5b6aa3793bdca1a81e6" -H "Cache-Control: no-cache" -H "Content-Type: multipart/form-data" -F "sampleContent=@/home/som2004/download1.jpg" -F "modelId=LBM2SV3OVWBEAP3LO2U7DZQ2SM" https://api.metamind.io/v1/vision/predict
